@@ -1195,7 +1195,7 @@
 
 
 	function _on(el, event, fn) {
-		el.addEventListener(event, fn, captureMode);
+		el.addEventListener(event, fn, { passive: false, capture: false });
 	}
 
 
